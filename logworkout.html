@@ -14,36 +14,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/logworkout.css">
 
-    <title>workOut Dummies</title>
+    <title>workOutDummies</title>
 
-    <style>
-        table.table td a.add {
-            color: #27C46B;
-        }
-
-        table.table td a.edit {
-            color: #FFC107;
-        }
-
-        table.table td a.delete {
-            color: #E34724;
-        }
-
-        table.table .form-control.error {
-            border-color: #f50000;
-        }
-
-        table.table td .add {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
     <!--Nav Bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-        <a class="navbar-brand" href="index.html">workOut Dummies</a>
+        <a class="navbar-brand" href="index.html">workOutDummies</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,6 +42,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="register.html">Register</a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>                          
                 </ul>
             </div>
         </div>
@@ -73,12 +56,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1>workOut Dummies</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout
-                    called a
-                    jumbotron and three supporting pieces of content. Use it as a starting point to create something
-                    more unique.
-                </p>
+                <h1>workOutDummies</h1>              
             </div>
         </div>
     </header>
@@ -86,30 +64,77 @@
 
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2 ">
-                    <h2 class="display-5 mb-5"> Log Workout</h2>
-                </div>
-            </div>
 
-            <div class="row">
+            <div class="row schedule-form">
                 <div class="col-sm-8 offset-sm-2">
+                  <h4 class="mt-2"> Schedule Workout</h4>
+
+                  <form method="POST" action="#" id="formschedule">
+                  <div class="form-group row">
+                        <div class="col-2"> 
+                            <label for="selectWorkout">Workout</label>
+                        </div>                                                        
+                        <div class="col-10">                                                              
+                            <select class="form-control" id="selectWorkout" required="required">
+                                    <option selected value="">Choose...</option>
+                                    <option value="Zumba">Zumba</option>
+                                    <option value="Yoga">Yoga</option>
+                                    <option value="Arobics">Arobics</option>                                        
+                            </select>
+                        </div>
+                    </div>                      
+                    <div class="form-group row">
+                            <div class="col-2"> 
+                                    <label class="mr-sm-2" for="date">Date</label>
+                            </div>                                                        
+                            <div class="col-10">   
+                                    <input class="form-control" type="date" value="2019-08-10" id="date" required="required">                                                           
+                            </div>
+                    </div>                                                                
+                    <div class="form-group row">
+                            <div class="col-2"> 
+                                    <label class="mr-sm-2" for="time">Time</label>
+                            </div>                                                        
+                            <div class="col-10">   
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="time" required="required">
+                                            <option selected value="">Choose...</option>
+                                            <option value="10:00">9:00-10:00 AM</option>
+                                            <option value="6:00">6:00-7:00 PM</option>
+                                            <option value="7:00">7:00-8:00 PM</option>                            
+                                    </select>
+                            </div>
+                    </div>                                        
+                    <div class="col-sm-12 mb-2 text-center">                                
+                            <button type="submit" id="submit" class="btn btn-primary">Schedule</button>
+                    </div>
+                    <div class="col-sm-12 text-center" >                                
+                        <div id="alert" class="alert alert-primary" style="display:none" role="alert" >
+                            Your Workout is Scheduled
+                        </div>                                
+                    </div>                            
+                  </form>
+                </div>
+        </div>                                                      
+                                        
+          <div class="row logworkouttable">
+                <div class="col-sm-8 offset-sm-2">
+                        <h4 class="mt-2"> Log Workout</h4>
                     <table class="table" id="tablelog">
                         <thead>
                             <tr>
                                 <th scope="col">Workout</th>
                                 <th scope="col">Time/Steps</th>
                                 <th scope="col">Calories</th>
-                                <th width="30%">Action</th>
+                                <th class = "colwidth" scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody id="table_body">
                             <tr>
-                                <td>cardio</td>
+                                <td>Cardio</td>
                                 <td>30</td>
                                 <td>250</td>
                                 <td>
-                                    <a class="add" title="Add" data-toggle="tooltip">
+                                    <a class="add" title="Add" data-toggle="tooltip" data-placement="top">
                                         <i class="material-icons">&#xE03B;</i></a> 
                                     <a class="edit" title="Edit" data-toggle="tooltip">
                                         <i class="material-icons">&#xE254;</i></a>                                    
@@ -134,6 +159,39 @@
                                 </td>
                             </tr>
                             <tr>
+                                    <td>Zumba</td>
+                                    <td>30</td>
+                                    <td>250</td>
+                                    <td>
+                                        <a class="add" title="Add" data-toggle="tooltip">
+                                            <i class="material-icons">&#xE03B;</i>
+                                        </a>
+                                        <a class="edit" title="Edit" data-toggle="tooltip">
+                                            <i class="material-icons">&#xE254;</i>
+                                        </a>
+                                        <a class="delete" title="Delete" data-toggle="tooltip">
+                                            <i class="material-icons">&#xE872;</i></a>
+    
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>Yoga</td>
+                                        <td>30</td>
+                                        <td>250</td>
+                                        <td>
+                                            <a class="add" title="Add" data-toggle="tooltip">
+                                                <i class="material-icons">&#xE03B;</i>
+                                            </a>
+                                            <a class="edit" title="Edit" data-toggle="tooltip">
+                                                <i class="material-icons">&#xE254;</i>
+                                            </a>
+                                            <a class="delete" title="Delete" data-toggle="tooltip">
+                                                <i class="material-icons">&#xE872;</i></a>
+        
+                                        </td>
+                                    </tr>
+            
+                            <tr>
                                 <td>Workout</td>
                                 <td>30</td>
                                 <td>250</td>
@@ -150,8 +208,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <select class="custom-select inputcontrol" id="workoutlist"
-                                        aria-label="Example select with button addon">
+                                    <select class="custom-select inputcontrol" id="workoutlist">
                                         <option value="">Select a List</option>
                                         <option value="Cardio">Cardio</option>
                                         <option value="Walking">Walking</option>
@@ -160,12 +217,11 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <input type="number" min="0" max="10000" width="50px"
+                                    <input type="number" min="0" max="10000" 
                                         class="inputcontrol form-control" id="steps" placeholder="0">
                                 </td>
                                 <td>
-                                    <input type="number" width="50px" class="inputcontrol form-control " id="calories"
-                                        id="calories">
+                                    <input type="number" class="inputcontrol form-control" id="calories">
                                 </td>
                                 <td>
                                     <a class="add" title="Add" data-toggle="tooltip">
@@ -208,75 +264,8 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            var addednewrow = true;
-            //$('[data-toggle="tooltip"]').tooltip();
-            var actions = $("table td:last-child").html();
-
-            //Get the last controls  into a variable                      
-            var index = $("table tbody tr:last-child").index();
-            var controls = $("table tbody tr:last-child").html();
-
-            $("table tbody tr").eq(index).find(".add, .edit, .delete").toggle();
-            //$('[data-toggle="tooltip"]').tooltip();                                         
-
-            // Add row on add button click
-            $(document).on("click", ".add", function () {
-                var empty = false;
-                //var input = $(this).parents("tr").find('input[type="text"]');
-                var input = $(this).parents("tr").find(".inputcontrol");
-
-                //Validate the control's data.
-                input.each(function () {
-                    if (!$(this).val()) {
-                        $(this).addClass("error");
-                        empty = true;
-                    } else {
-                        $(this).removeClass("error");
-                    }
-                });
-                $(this).parents("tr").find(".error").first().focus();
-
-                if (!empty) {
-                    input.each(function () {
-                        $(this).parent("td").html($(this).val());
-                    });
-
-                    $(this).parents("tr").find(".add, .edit ").toggle();
-
-                    //is this a last child
-                    if ($(this).parents("tr").is(':last-child')) {
-                        var index2 = $("table tbody tr:last-child").index();
-                        var row = '<tr>' + controls + '</tr>';
-                        alert(controls);
-                        $("table").append(row);
-                        
-                        $("table tbody tr").eq(index2 + 1).find(".add, .edit ").toggle();
-                        //$('[data-toggle="tooltip"]').tooltip();               
-                    }
-                    //else {
-                    //    $(this).parents("tr").find(".add, .edit").toggle();
-                    //}
-                }
-            });
-            // Edit row on edit button click
-            $(document).on("click", ".edit", function () {
-                $(this).parents("tr").find("td:not(:last-child)").each(function () {
-                    $(this).html('<input type="text" class="form-control inputcontrol" value="' + $(this).text() + '">');
-                });
-                $(this).parents("tr").find(".add, .edit").toggle();
-            });
-            // Delete row on delete button click
-            $(document).on("click", ".delete", function () {
-                $(this).parents("tr").remove();
-                $(".add-new").removeAttr("disabled");
-                //addnew= true;
-            });
-        });
-    </script>
+    <!--This script is to handle actions in table-->
+    <script type="text/javascript" src="js/logworkout.js"></script>
 
 </body>
 

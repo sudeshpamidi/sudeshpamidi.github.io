@@ -25,7 +25,7 @@
 <body>
   <!--Nav Bar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <a class="navbar-brand" href="index.html">workOut Dummies</a>
+    <a class="navbar-brand" href="index.html">workOutDummies</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
       aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -42,19 +42,20 @@
           <li class="nav-item active">
             <a class="nav-link" href="register.html">Register</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>  
         </ul>
       </div>
     </div>
   </nav>
  <!--End of Nav Bar -->
-
   <!--header -->
   <header>
     <!-- Main jumbotron for a primary marketing message or call to action -->    
     <div class="jumbotron">
       <div class="container">
-        <h1>workOut Dummies</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>        
+        <h1>workOutDummies</h1>        
       </div>
     </div>
   </header>
@@ -67,7 +68,7 @@
                         
         <div class="row">                    
             <div class="col-md-12">                
-                <form>
+              <form action ="#" method="POST">
                 <div class="row">                    
                     <div class="col-md-6">                
                         <div class="form-group">
@@ -91,15 +92,36 @@
                                 <input type="tel" class="form-control" id="phone" placeholder="Phone (999-999-9999)" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">                        
                             </div>
         
- 
-                      
+                            <p class="form-check-label"> How did you hear about us?</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="friends">
+                                <label class="form-check-label" for="inlineRadio1">Friend</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="internet">
+                                <label class="form-check-label" for="inlineRadio2">Internet Search</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="others" >
+                                <label class="form-check-label" for="inlineRadio3">Others</label>                                
+                              </div>                                        
+                              <div class="form-group">
+                                <input class="form-control" type ="text" id = "Others">
+                              </div>
                     </div>
                     <div class="col-md-6">
-                            <div class="form-group">                                                        
-                                <input type="number" class="form-control number" id="weight" min="0" max="1000" placeholder="Weight" required="required" >                        
-                            </div>
-                            <div class="form-group">                                                        
-                                <input type="number" class="form-control" id="hight" min="0" max="1000" placeholder="Hight" required="required" >                        
+                            <div class="form-group">  
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control number" id="weight" min="0" max="1000" placeholder="Weight" required="required" >                        
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control number" id="hight" min="0" max="10" placeholder="Hight" required="required" >                                                                
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" id="hight" min="0" max="100" placeholder="Age" required="required" >                        
+                                    </div>
+                                </div>                                                      
                             </div>
 
                             <div class="form-group">                                                                                      
@@ -107,16 +129,16 @@
                                   <label>Gender:</label>
                               </div>
                               <div class="form-check form-check-inline">                        
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio1" value="option1">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio1" value="male">
                                   <label class="form-check-label" for="radio1">Male</label>
                               </div>
                               <div class="form-check form-check-inline">                          
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio2" value="female">
                                     <label class="form-check-label font-normal" for="radio2">Female</label>
                               </div>
                               <div class="form-check form-check-inline">                          
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio3" value="option3">
-                                    <label class="form-check-label font-normal" for="radio3">Others</label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio3" value="others">
+                                    <label class="form-check-label font-normal" for="radio3">Others</label>                                    
                               </div>        
                             </div>
                             <div class="form-group">                                                                                      
@@ -128,25 +150,36 @@
                             <div class="form-group">
                                 <div class="row">
                                   <div class="col-sm-3"><input type="text" class="form-control" id= "city" name="City" placeholder="City" required="required"></div>
-                                  <div class="col-sm-3"><input type="text" class="form-control" id = "state" name="State" placeholder="State" required="required"></div>
+                                  <div class="col-sm-3">                                  
+                                    <select class="custom-select form-control"  id ="state"  required="required">
+                                        <option value="">State</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NJ">Neew Jearsey</option>
+                                        <option value="MA">Massachusetts</option>
+                                    </select>
+                                  </div>
                                   <div class="col-sm-3"><input type="text" class="form-control" id = "zip" name="Zip" placeholder="Zip" required="required"></div>
                                 </div>        	
                             </div>                            
                     </div>                                       
                 </div>
-                <div class="row">                    
+
+                <div class="row">                  
                     <div class="col-md-12 text-center">                                  
                       <button type="reset" class="btn btn-primary">Reset</button>  
                       <button type="submit" class="btn btn-primary">Submit</button>                            
                     <div>                                  
                 </div>    
-                </form>           
+
+               </form>           
             </div>  
 
         </div>    
         <div class="row">                       
-            <div class="text-center">Already have an account? <a href="login.html">login in</a></div>
+            <div class="text-center ">Already have an account?<a href="login.html"> Login Here</a></div>
         </div>    
+        
         
     </div> <!-- /container -->
   
