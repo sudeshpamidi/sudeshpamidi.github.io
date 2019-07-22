@@ -2,207 +2,180 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/stylesheet.css">
-
-  <title>workOut Dummies</title>
-  
-  <style type="text/css">
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>workoutDummies</title>
 </head>
 
 <body>
-  <!--Nav Bar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <a class="navbar-brand" href="index.html">workOutDummies</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <div class="ml-auto">
-        <ul class="navbar-nav my-2 my-lg-0">
-        <li class="nav-item">
-            <a class="nav-link" href="logworkout.html">Log Workout </a>
-          </li>                
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="register.html">Register</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>  
-        </ul>
-      </div>
-    </div>
-  </nav>
- <!--End of Nav Bar -->
-  <!--header -->
-  <header>
-    <!-- Main jumbotron for a primary marketing message or call to action -->    
-    <div class="jumbotron">
-      <div class="container">
-        <h1>workOutDummies</h1>        
-      </div>
-    </div>
-  </header>
-  <!--End header -->
+    <!--Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="index.html">workoutDummies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="ml-auto">
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Nav Bar -->
 
-  <main>
- 
-    <div class="container signup-form">
-        <h2 class="display-5 mb-5"> Registration</h2>
-                        
-        <div class="row">                    
-            <div class="col-md-12">                
-              <form action ="#" method="POST">
-                <div class="row">                    
-                    <div class="col-md-6">                
-                        <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
-                              <div class="col-sm-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
-                            </div>        	
+    <!--header -->
+    <header>
+        <!-- Main jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>workoutDummies</h1>
+            </div>
+        </div>
+    </header>
+    <!--End header -->
+
+    <main>
+        <!-- begining of the container -->
+        <div class="container signup-form">
+            <h2 class="display-5 mb-5"> Registration</h2>
+            <div class="row">
+                <form action="logworkout.html" method="GET" id="formregister" name="formregister">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6"><input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" required="required"></div>
+                                        <div class="col-sm-6"><input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" required="required"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone (999-999-9999)" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                                <p class="form-check-label"> How did you hear about us?</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hearaboutus-opts" id="rdofriend" value="friends" required="required">
+                                    <label class="form-check-label font-normal" for="rdofriend">Friend</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hearaboutus-opts" id="rdointrernet" value="internet" required="required">
+                                    <label class="form-check-label font-normal" for="rdointrernet">Internet
+                                        Search</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hearaboutus-opts" id="rdoothers" value="others" required="required">
+                                    <label class="form-check-label font-normal" for="rdoothers">Others</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="others" name="others">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <input type="number" class="form-control number" id="weight" name="weight" min="0" max="1000" placeholder="Weight" required="required">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="number" class="form-control number" id="hight" name="hight" min="0" max="10" placeholder="Hight" required="required">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="number" class="form-control" id="age" name="age" min="18" max="100" placeholder="Age" required="required">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <label>Gender:</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender_options" id="rdo_male" value="male" checked>
+                                        <label class="form-check-label font-normal" for="rdo_male">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender_options" id="rdo_female" value="female">
+                                        <label class="form-check-label font-normal" for="rdo_female">Female</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender_options" id="rdo_others" value="others">
+                                        <label class="form-check-label font-normal" for="rdo_others">Others</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="address1" name="address1" placeholder="Address 1" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="address2" name="address2" placeholder="Address 2">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-3"><input type="text" class="form-control" id="city" name="city" placeholder="City" required="required"></div>
+                                        <div class="col-sm-3">
+                                            <select class="custom-select form-control" id="state" name="state" required="required">
+                                                <option value="">State</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NJ">Neew Jearsey</option>
+                                                <option value="MA">Massachusetts</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3"><input type="tel" class="form-control" id="zip" name="zip" placeholder="Zip(99999)" pattern="[0-9]{5}" required="required"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                          <div class="form-group">
-                              <input type="email" class="form-control" name="email" placeholder="Email" required="required">
-                          </div>
-                          <div class="form-group">
-                              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-                          </div>
-                          <div class="form-group">
-                              <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-                          </div>                                   
-        
-                            <div class="form-group">                                                        
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone (999-999-9999)" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">                        
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="reset" class="btn btn-sm btn-primary ">Reset</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Submit</button>
                             </div>
-        
-                            <p class="form-check-label"> How did you hear about us?</p>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="friends">
-                                <label class="form-check-label" for="inlineRadio1">Friend</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="internet">
-                                <label class="form-check-label" for="inlineRadio2">Internet Search</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="others" >
-                                <label class="form-check-label" for="inlineRadio3">Others</label>                                
-                              </div>                                        
-                              <div class="form-group">
-                                <input class="form-control" type ="text" id = "Others">
-                              </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                            <div class="form-group">  
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <input type="number" class="form-control number" id="weight" min="0" max="1000" placeholder="Weight" required="required" >                        
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <input type="number" class="form-control number" id="hight" min="0" max="10" placeholder="Hight" required="required" >                                                                
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <input type="number" class="form-control" id="hight" min="0" max="100" placeholder="Age" required="required" >                        
-                                    </div>
-                                </div>                                                      
-                            </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-md-12">Already have an account?<a href="login.html"> Login Here</a></div>
+            </div>
+        </div>
+        <!-- end of the container -->
+    </main>
 
-                            <div class="form-group">                                                                                      
-                              <div class="form-check form-check-inline">
-                                  <label>Gender:</label>
-                              </div>
-                              <div class="form-check form-check-inline">                        
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio1" value="male">
-                                  <label class="form-check-label" for="radio1">Male</label>
-                              </div>
-                              <div class="form-check form-check-inline">                          
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio2" value="female">
-                                    <label class="form-check-label font-normal" for="radio2">Female</label>
-                              </div>
-                              <div class="form-check form-check-inline">                          
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio3" value="others">
-                                    <label class="form-check-label font-normal" for="radio3">Others</label>                                    
-                              </div>        
-                            </div>
-                            <div class="form-group">                                                                                      
-                                <input type="text" class="form-control" id="address1" placeholder="Address 1" required="required" >                        
-                            </div>  
-                            <div class="form-group">                                                                                      
-                                <input type="text" class="form-control" id="address2" placeholder="Address 2" required="required" >                        
-                            </div>  
-                            <div class="form-group">
-                                <div class="row">
-                                  <div class="col-sm-3"><input type="text" class="form-control" id= "city" name="City" placeholder="City" required="required"></div>
-                                  <div class="col-sm-3">                                  
-                                    <select class="custom-select form-control"  id ="state"  required="required">
-                                        <option value="">State</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NJ">Neew Jearsey</option>
-                                        <option value="MA">Massachusetts</option>
-                                    </select>
-                                  </div>
-                                  <div class="col-sm-3"><input type="text" class="form-control" id = "zip" name="Zip" placeholder="Zip" required="required"></div>
-                                </div>        	
-                            </div>                            
-                    </div>                                       
-                </div>
+    <!-- Begining of footer -->
+    <footer class="container">
+        <p>&copy; Company 2017-2019</p>
+    </footer>
+    <!-- End of container -->
 
-                <div class="row">                  
-                    <div class="col-md-12 text-center">                                  
-                      <button type="reset" class="btn btn-primary">Reset</button>  
-                      <button type="submit" class="btn btn-primary">Submit</button>                            
-                    <div>                                  
-                </div>    
-
-               </form>           
-            </div>  
-
-        </div>    
-        <div class="row">                       
-            <div class="text-center ">Already have an account?<a href="login.html"> Login Here</a></div>
-        </div>    
-        
-        
-    </div> <!-- /container -->
-  
-  </main>
-
-
-  <!-- Begining of footer -->
-  <footer class="container">
-    <p>&copy; Company 2017-2019</p>
-  </footer>
-  <!-- End of container -->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>

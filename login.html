@@ -2,119 +2,104 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- This link contains the special charecter failing the validation-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/login.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/login.css">
 
-  <title>workOut Dummies</title>
+    <title>workoutDummies</title>
 
 </head>
 
 <body>
-  <!--Nav Bar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <a class="navbar-brand" href="index.html">workOutDummies</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <div class="ml-auto">
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="logworkout.html">Log Workout</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--End of Nav Bar -->
-  <!--header -->
-  <header>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>workOutDummies</h1>
-      </div>
-    </div>
-  </header>
-  <!--End header -->
-
-  <main>
-    <div class="container login-form">
-
-      <div class="row">
-        <div class="col-sm-4 offset-sm-4 ">
-          <h2 class="display-5 mb-3"> Login</h2>
+    <!--Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="index.html">workoutDummies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="ml-auto">
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-sm-4 offset-sm-4 ">
+    </nav>
+    <!--End of Nav Bar -->
 
-          <form action="#" method="GET">
-            <div class="form-group">
-              <i class="fa fa-user"></i>
-              <input type="text" class="form-control" placeholder="Username" required="required">
+    <!--header -->
+    <header>
+        <!-- Main jumbotran -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>workOutDummies</h1>
             </div>
-
-            <div class="form-group">
-              <i class="fa fa-lock"></i>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            </div>
-
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Remember me
-              </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-
-          </form>
-          <div>
-            <!--</div>class="modal-footer"> -->
-            <a href="#">Forgot Password?</a>
-          </div>
-
         </div>
-      </div>
-    </div> <!-- /container -->
+    </header>
+    <!--End header -->
 
-  </main>
+    <main>
+        <div class="container login-form">
+            <div class="row">
+                <div class="col-sm-4 offset-sm-4 ">
+                    <h2 class="display-5 mb-3"> Login</h2>
+                </div>
+                <div class="col-sm-4 offset-sm-4 ">
+                    <form action="logworkout.html" method="GET" id="frmlogin">
+                        <div class="form-group">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" id="remember-me" name="remember-me" value="remember-me"> Remember
+                                me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        <br>
+                        <div>
+                            <!--</div>class="modal-footer"> -->
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </main>
 
-  <!-- Begining of footer -->
-  <footer class="container">
-    <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
-  </footer>
-  <!-- End of container -->
+    <!-- Begining of footer -->
+    <footer class="container">
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+    </footer>
+    <!-- End of container -->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

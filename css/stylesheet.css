@@ -1,236 +1,237 @@
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
-    padding-top: 3.5rem;       
-    font-family: 'Varela Round', sans-serif; 
-  }
+    padding-top: 3.5rem;
+    font-family: 'Varela Round', sans-serif;
+}
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     #lgimg {
         display: none;
     }
 }
 
-header{
-  text-align: center;
+.jumbotron {
+    background-image: url(../img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
 }
-footer{
-  text-align: right;
+
+header {
+    text-align: center;
 }
+
+footer {
+    text-align: right;
+}
+
 label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .font-normal {
-  font-weight: none;
+    font-weight: normal;
 }
 
 .image {
-  /*border-radius: 25px; */
-  width: 300px;
-  height: 225px; 
- }
-
- /*
- figure {
-  width: 130px;
-  height: 130px; 
- }
-*/
- .form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+    width: 300px;
+    height: 225px;
 }
 
-#steps, #calories {
-  width :100px;
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
 }
 
-.fa-pencil-alt{
-color:red;
+#steps,
+#calories {
+    width: 100px;
+}
+
+.fa-pencil-alt {
+    color: red;
 }
 
 .login-form h4 {
-  text-align: center;
-  font-size: 26px;
+    text-align: center;
+    font-size: 26px;
 }
 
 .login-form .form-group {
-  position: relative;
+    position: relative;
 }
+
 .login-form .form-group i {
-  position: absolute;
-  left: 15px;
-  top: 11px;
-  font-size: 18px;
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    font-size: 18px;
 }
+
 .login-form .form-group .form-control {
-  padding-left: 40px;
+    padding-left: 40px;
 }
 
 .login-form .form-group .form-control:focus {
-  border-color: #00ce81;
+    border-color: #00ce81;
 }
-.llogin-formogin .form-group .form-control, .modal-login .btn {
-  min-height: 40px;
-  border-radius: 3px; 
+
+.llogin-formogin .form-group .form-control,
+.modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px;
 }
+
 .login-form .form-group .hint-text {
-  text-align: center;
-  padding-top: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-
-.login-form h2,  
+.login-form h2,
 .signup-form h2,
-.logworkout-form h2 
- {  color: #636363; 
-  margin: 0 0 15px;
-  position: relative;
-  text-align: center;
-  }
+.logworkout-form h2 {
+    color: #636363;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+}
 
-
-.login-form h2:before, 
-.login-form h2:after, 
-.signup-form h2:before, 
+.login-form h2:before,
+.login-form h2:after,
+.signup-form h2:before,
 .signup-form h2:after,
-.logworkout-form h2:before, 
-.logworkout-form h2:after
-{
-  content: "";
-  height: 2px;
-  width: 30%;
-  background: #d4d4d4;
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-}	
-
+.logworkout-form h2:before,
+.logworkout-form h2:after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
 
 .login-form h2:before,
 .signup-form h2:before,
-.logworkout-form h2 :before  
-{
-  left: 0;
+.logworkout-form h2 :before {
+    left: 0;
 }
 
 .login-form h2:after,
 .signup-form h2:after,
-.logworkout-form h2:after 
-{
-  right: 0;
+.logworkout-form h2:after {
+    right: 0;
 }
 
-.signup-form .hint-text{
-  color: #999;
-  text-align: center;
+.signup-form .hint-text {
+    color: #999;
+    text-align: center;
 }
 
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: #969fa4;
+}
 
-.form-control{
-  height: 40px;
-  box-shadow: none;
-  color: #969fa4;
+.form-control:focus {
+    border-color: #5cb85c;
 }
-.form-control:focus{
-  border-color: #5cb85c;
-}
-  .form-control, .btn{        
-      border-radius: 3px;
-  }
 
+.form-control,
+.btn {
+    border-radius: 3px;
+}
 
-.signup-form{
-  margin: 0 auto;
-  padding: 30px 0;
+.signup-form {
+    margin: 0 auto;
+    padding: 30px 0;
 }
-.signup-form h2{
-  color: #636363;
-  margin: 0 0 15px;
-  position: relative;
-  text-align: center;
-  }
-.signup-form h2:before, .signup-form h2:after{
-  content: "";
-  height: 2px;
-  width: 30%;
-  background: #d4d4d4;
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-}	
-.signup-form h2:before{
-  left: 0;
+
+.signup-form h2 {
+    color: #636363;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
 }
-.signup-form h2:after{
-  right: 0;
+
+.signup-form h2:before,
+.signup-form h2:after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
 }
-  .signup-form .hint-text{
-  color: #999; 
-  margin-bottom: 30px;
-  text-align: center;
+
+.signup-form h2:before {
+    left: 0;
 }
-.logworkouttable, .schedule-form, .login-form form, .signup-form form{
-  color: #999;
-  border-radius: 3px;
+
+.signup-form h2:after {
+    right: 0;
+}
+
+.signup-form .hint-text {
+    color: #999;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logworkouttable,
+.schedule-form,
+.login-form form,
+.signup-form form {
+    color: #999;
+    border-radius: 3px;
     margin-bottom: 15px;
-    background: #f2f3f7; 
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     padding: 25px;
-  }
-.signup-form .form-group{
-  margin-bottom: 20px;  
 }
-.signup-form input[type="checkbox"]{
-  margin-top: 3px;
-}
-.signup-form .btn{        
-      font-size: 16px;
-      font-weight: bold;		
-  min-width: 140px;
-      outline: none !important;
-  }
 
-  input[type="number"] {
-    width:100px;
- }
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
 
-/*
-  .signup-form .row div:first-child{
-  padding-right: 10px;
+.signup-form input[type="checkbox"] {
+    margin-top: 3px;
 }
-.signup-form .row div:last-child{
-  padding-left: 10px;
-} 
-*/   	
-/*  
-.signup-form a{  
-  color: blue;
-  text-decoration:none 
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 140px;
+    outline: none !important;
 }
-*/
-  .signup-form a:hover{
-  text-decoration: none;
+
+input[type="number"] {
+    width: 100px;
 }
-.signup-form form a{
-  color: #5cb85c;
-  text-decoration: none;
-}	
-.signup-form form a:hover{
-  text-decoration: underline;
+
+.signup-form a:hover {
+    text-decoration: none;
 }
+
+.signup-form form a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+
 aside {
-  width: 30%;
-  padding-left: .5rem;
-  margin-left: .5rem;    
-  float: right;            
-  /* box-shadow: inset 5px 0px 5px -5px ; */
+    width: 30%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
 }
-.image-sm {
-  /*border-radius: 25px; */
-  width: 100%;
-  height: 100%;   
- } 
 
+.image-sm {
+    width: 100%;
+    height: 100%;
+}

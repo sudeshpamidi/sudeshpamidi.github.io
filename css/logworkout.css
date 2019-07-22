@@ -1,3 +1,16 @@
+@media only screen and (max-width:500px) {
+    .colwidth {
+        width: 30%
+    }
+    body {
+        background-color: lightgray;
+    }
+    table.table {
+        border-style: solid;
+        border-color: white;
+    }
+}
+
 table.table td a.add {
     color: #27C46B;
 }
@@ -17,12 +30,7 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
-.colwidth {
-    width : 30%
-}
 
-/*
-form .alert {
-    display: none;    
+.colwidth {
+    width: 30%;
 }
-*/
