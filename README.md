@@ -1,17 +1,19 @@
-# WorkOutDummies
+# AmericanFinancials
+Financial calculators - Mortgage calculators, Present and Future value of annuity calculators
 
-(https://WorkOutDummies.com)
+(https://AmericanFinancials.com)
 
-WorkOutDummies is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+AmericanFinancials.com is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5  application to provide financial calculators like martgage calulators, Present and Future annuity Calculators..etc
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+  - 
+  - 
+  - 
 
 # New Features!
 
-  - Home page with workouts descriptions
-  - Log your workout
+  - Martgage Calculator.
+  - Future value calculator.
+  - Present Value of Annuity Calculator..etc
 
 
 You can also:
@@ -33,12 +35,11 @@ This text you see here is *actually* written in Markdown! To get a feel for Mark
 
 ### Tech
 
-workoutDummies  uses a number of open source projects to work properly:
-
+AmericanFinancials  uses a number of open source projects to work properly:
 
 * [Font Awesome] - awesome web-based text editor
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery] - duh
+* [Javascripts].
 
-And of course workoutDummies itself is open source with a [public repository][dill]
+And of course AmericanFinancials itself is open source with a [public repository]
  on GitHub.
