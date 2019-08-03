@@ -1,9 +1,10 @@
-# AmericanFinancials
-Financial calculators - Mortgage calculators, Present and Future value of annuity calculators
+# OurLittleTown
+Our Little Town- Week 2 Project
 
-(https://AmericanFinancials.com)
 
-AmericanFinancials.com is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5  application to provide financial calculators like martgage calulators, Present and Future annuity Calculators..etc
+(https://OurLittleTown.com)
+
+OurLittleTown.com is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5  website for the tourist department of a small town that will help tourists plan vacation to the town.
 
   - 
   - 
@@ -11,9 +12,10 @@ AmericanFinancials.com is a cloud-enabled, mobile-ready, offline-storage, Angula
 
 # New Features!
 
-  - Martgage Calculator.
-  - Future value calculator.
-  - Present Value of Annuity Calculator..etc
+  - Home Page with the information about tiny out of way paradise, local images and navigation links.
+  - Car rental estimation
+  - Hotel rental cost 
+  - Tour explorer
 
 
 You can also:
@@ -35,11 +37,13 @@ This text you see here is *actually* written in Markdown! To get a feel for Mark
 
 ### Tech
 
-AmericanFinancials  uses a number of open source projects to work properly:
+OurLittleTown  uses a number of open source projects to work properly:
 
 * [Font Awesome] - awesome web-based text editor
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [Javascripts].
 
-And of course AmericanFinancials itself is open source with a [public repository]
+And of course OurLittleTown itself is open source with a [public repository]
  on GitHub.
+ 
+ <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
