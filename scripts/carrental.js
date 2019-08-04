@@ -1,4 +1,4 @@
-//Dicription: This script contains supporting fucntions for carrental.html page..
+//Dicription: This script contains supporting fucntions for carrental.html page
 //Authot :  Sudesh Pamidi
 "use strict"
 
@@ -16,6 +16,7 @@ window.onload = function() {
     const under24RdoYesRdo = document.getElementById("under25Yes");
     const resultsDiv = document.getElementById("results")
     const alertDiv = document.getElementById("alert")
+
 
     // binding the events 
     estimate.onclick = displayEsimates;
