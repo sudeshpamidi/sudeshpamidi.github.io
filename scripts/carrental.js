@@ -17,7 +17,6 @@ window.onload = function() {
     const resultsDiv = document.getElementById("results")
     const alertDiv = document.getElementById("alert")
 
-
     // binding the events 
     estimate.onclick = displayEsimates;
 
