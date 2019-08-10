@@ -10,7 +10,6 @@ $(document).ready(function() {
 
     document.getElementById("today").innerHTML = new Date().toDateString() + " | 79° F";
 
-
     /***** Begining of getJSON******/
     $.getJSON("./data/mountains.json", function(data) {
         let mountains = data.mountains

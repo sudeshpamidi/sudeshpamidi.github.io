@@ -1,3 +1,10 @@
+/**
+ * Dicription: This script contains common javascript objects used in the appliaction
+ * Author : Sudesh Pamidi
+ */
+
+"use strict"
+
 let parkTypes = [
     "National Park",
     "National Monument",
@@ -72,7 +79,7 @@ let locations = [
     "Wyoming"
 ];
 
-let parktheads = [
+let parkLabels = [
     "Location",
     "Address",
     "Phone",
@@ -87,6 +94,5 @@ let mountainLabels = [
     "Image",
     "Description",
     "Coordinates"
-    /*,
-        "Sunrise/Sunset"*/
+    /* "Sunrise/Sunset" */
 ];
