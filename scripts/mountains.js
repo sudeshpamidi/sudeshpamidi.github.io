@@ -23,7 +23,11 @@ $(document).ready(function() {
         let items = getMountainInfo(mountainDropdown.value);
         displayData(tMountain, items);
 
-        //This is to fill the dropDown with the data in array of elements.
+        /**
+         * This is to fill the dropDown with the data in array of elements.
+         * @param {*} dropdown  -- dropdown name 
+         * @param {*} obj       -- javascript object
+         */
         function fillDropDown(dropdown, obj) {
             //adding the option dynamically
             let nextPos = dropdown.options.length;
@@ -88,6 +92,7 @@ $(document).ready(function() {
             addRow(table, i, label, text)
             i++;
         });
+
         //add row to table with sunrise/sunset information
         getSunriseSunset(data[0].coords.lat, data[0].coords.lng, table, i);
     };
@@ -109,7 +114,6 @@ $(document).ready(function() {
         tr.appendChild(cell);
     };
 
-
     /** To fetch the sunrise and sunset information 
      * based on given lattitude and longitude write to a row in table
      * @param {*} lat          lattitide
@@ -124,6 +128,5 @@ $(document).ready(function() {
             console.log(sunRiseSet.sunrise);
             addRow(table, childrow, "Sunrise/Sunset:", "Rise: " + sunRiseSet.sunrise + ",  Set: " + sunRiseSet.sunset);
         });
-
     };
 });
