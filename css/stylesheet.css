@@ -9,12 +9,20 @@ body {
     }
 }
 
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .jumbotron {
-    background-image: url(../images/town.jpeg);
+    background-image: url(../images/home-jumbo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: white;
+}
+
+#table {
+    font-size: 15px;
 }
 
 header {
@@ -64,7 +72,7 @@ label {
 }
 
 .image-md {
-    width: 412px;
+    width: 310px;
     height: 240px;
 }
 
@@ -72,4 +80,20 @@ label {
     width: 80px;
     height: 80px;
     padding: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+legend.scheduler-border {
+    width: inherit;
+    /* Or auto */
+    padding: 0 10px;
+    /* To give a bit of padding on the left and right */
+    border-bottom: none;
 }

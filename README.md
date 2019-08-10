@@ -1,10 +1,9 @@
-# OurLittleTown
-Our Little Town- Week 2 Project
+# EnjoyTheOutdoors
+Enjoy The Outdoors - Week 3 Project
 
+(https://enjoytheoutdoors.com)
 
-(https://OurLittleTown.com)
-
-OurLittleTown.com is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5  website for the tourist department of a small town that will help tourists plan vacation to the town.
+enjoytheoutdoors.com is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5  website for the tourist department of a small town that will help tourists plan vacation to the town.
 
   - 
   - 
@@ -13,9 +12,9 @@ OurLittleTown.com is a cloud-enabled, mobile-ready, offline-storage, AngularJS p
 # New Features!
 
   - Home Page with the information about tiny out of way paradise, local images and navigation links.
-  - Car rental estimation
-  - Hotel rental cost 
-  - Tour explorer
+  - Search the Mountains information 
+  - Search the Parks information
+
 
 
 You can also:
@@ -45,5 +44,5 @@ OurLittleTown  uses a number of open source projects to work properly:
 
 And of course OurLittleTown itself is open source with a [public repository]
  on GitHub.
+Pics and information is from novascotia.com
  
- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
