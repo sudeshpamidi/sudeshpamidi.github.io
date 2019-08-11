@@ -25,7 +25,8 @@ $(document).ready(function() {
 
     /* begining  of getting JSON file */
     $.getJSON("/data/nationalparks.json", function(data) {
-        let parks = data.parks
+        let parks = data.parks.sort(sortByLocationNameDesc);
+
         searchByLocation.onchange = displayResultsByLocation;
         searchParkType.onchange = displayResultsByParkType;
 
@@ -192,4 +193,16 @@ $(document).ready(function() {
             searchDropdown.remove(i);
         }
     };
+
+    /**
+     * Sort the object by location name desc
+     * @param {*} a 
+     * @param {*} b 
+     */
+    function sortByLocationNameDesc(a, b) {
+        if (a.LocationName > b.LocationName) {
+            return -1;
+        }
+        return 1;
+    }
 });
