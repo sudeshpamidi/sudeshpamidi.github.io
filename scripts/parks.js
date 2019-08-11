@@ -179,7 +179,6 @@ $(document).ready(function() {
         let nextPos = dropdown.options.length;
         obj.forEach(function(e) {
             dropdown.options[nextPos] = new Option(e, e);
-            console.log(e);
             nextPos++;
         });
     };

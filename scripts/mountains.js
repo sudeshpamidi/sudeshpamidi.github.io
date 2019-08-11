@@ -125,7 +125,6 @@ $(document).ready(function() {
         let url = "https://api.sunrise-sunset.org/json?lat=" + lat + "&lng=" + lng + "&date=today";
         $.getJSON(url, function(data) {
             let sunRiseSet = data.results;
-            console.log(sunRiseSet.sunrise);
             addRow(table, childrow, "Sunrise/Sunset:", "Rise: " + sunRiseSet.sunrise + ",  Set: " + sunRiseSet.sunset);
         });
     };
